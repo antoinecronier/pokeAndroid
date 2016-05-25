@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+  <Match>
+    <Class name="~.*\.R\$.*"/>
+  </Match>
+  <Match>
+    <Or>
+    <Package name="~com[.]antoinecronier[.]pokebattle[.]criterias[.]base([.].*)?" />
+    <Package name="~com[.]antoinecronier[.]pokebattle[.]data[.]base([.].*)?" />
+    <Package name="~com[.]antoinecronier[.]pokebattle[.]harmony([.].*)?" />
+    <Package name="~com[.]antoinecronier[.]pokebattle[.]provider[.]base([.].*)?" />
+    <Package name="~com[.]antoinecronier[.]pokebattle[.]provider[.]utils[.]base([.].*)?" />
+    <Class name="~com[.]antoinecronier[.]pokebattle[.]PokebattleApplicationBase.java"/>
+    </Or>
+  </Match>
+</FindBugsFilter>
