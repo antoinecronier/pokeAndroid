@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/pokenpc_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/pokenpc_nom_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pokenpc_nom_label"/>
+            <TextView
+                android:id="@+id/pokenpc_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_nom_label" />
+            <TextView
+                android:id="@+id/pokenpc_profession_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_nom"
+                android:text="@string/pokenpc_profession_label"/>
+            <TextView
+                android:id="@+id/pokenpc_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_profession_label" />
+            <TextView
+                android:id="@+id/pokenpc_description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_profession"
+                android:text="@string/pokenpc_description_label"/>
+            <TextView
+                android:id="@+id/pokenpc_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_description_label" />
+            <TextView
+                android:id="@+id/pokenpc_objets_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_description"
+                android:text="@string/pokenpc_objets_label"/>
+            <TextView
+                android:id="@+id/pokenpc_objets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_objets_label" />
+            <TextView
+                android:id="@+id/pokenpc_badge_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_objets"
+                android:text="@string/pokenpc_badge_label"/>
+            <TextView
+                android:id="@+id/pokenpc_badge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_badge_label" />
+            <TextView
+                android:id="@+id/pokenpc_pokemons_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_badge"
+                android:text="@string/pokenpc_pokemons_label"/>
+            <TextView
+                android:id="@+id/pokenpc_pokemons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_pokemons_label" />
+            <TextView
+                android:id="@+id/pokenpc_team_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_pokemons"
+                android:text="@string/pokenpc_team_label"/>
+            <TextView
+                android:id="@+id/pokenpc_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_team_label" />
+            <TextView
+                android:id="@+id/pokenpc_position_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_team"
+                android:text="@string/pokenpc_position_label"/>
+            <TextView
+                android:id="@+id/pokenpc_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_position_label" />
+            <TextView
+                android:id="@+id/pokenpc_zone_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokenpc_position"
+                android:text="@string/pokenpc_zone_label"/>
+            <TextView
+                android:id="@+id/pokenpc_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokenpc_zone_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/pokenpc_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/pokenpc_not_found" />
+</RelativeLayout>

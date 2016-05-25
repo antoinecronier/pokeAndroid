@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="7"
         android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <application
         android:label="@string/app_name"
@@ -22,5 +24,491 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.pokenpc.PokeNpcCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeNpc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokenpc.PokeNpcEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeNpc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokenpc.PokeNpcShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeNpc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokenpc.PokeNpcListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeNpc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokebadge.PokeBadgeCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeBadge" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokebadge.PokeBadgeEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeBadge" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokebadge.PokeBadgeShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeBadge" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokebadge.PokeBadgeListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeBadge" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokezone.PokeZoneCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeZone" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokezone.PokeZoneEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeZone" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokezone.PokeZoneShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeZone" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokezone.PokeZoneListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeZone" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeposition.PokePositionCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokePosition" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeposition.PokePositionEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokePosition" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeposition.PokePositionShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokePosition" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeposition.PokePositionListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokePosition" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokearene.PokeAreneCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeArene" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokearene.PokeAreneEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeArene" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokearene.PokeAreneShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeArene" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokearene.PokeAreneListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeArene" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketype.PokeTypeCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeType" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketype.PokeTypeEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeType" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketype.PokeTypeShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeType" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketype.PokeTypeListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeType" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeattaque.PokeAttaqueCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeAttaque" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeattaque.PokeAttaqueEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeAttaque" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeattaque.PokeAttaqueShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeAttaque" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeattaque.PokeAttaqueListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeAttaque" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokedresseur.PokeDresseurCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeDresseur" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokedresseur.PokeDresseurEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeDresseur" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokedresseur.PokeDresseurShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeDresseur" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokedresseur.PokeDresseurListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeDresseur" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeobjet.PokeObjetCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeobjet.PokeObjetEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeobjet.PokeObjetShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokeobjet.PokeObjetListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokepokemon.PokePokemonCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokepokemon.PokePokemonEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokepokemon.PokePokemonShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.pokepokemon.PokePokemonListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypeobjet.PokeTypeObjetCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeTypeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypeobjet.PokeTypeObjetEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeTypeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypeobjet.PokeTypeObjetShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeTypeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypeobjet.PokeTypeObjetListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeTypeObjet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypepokemon.PokeTypePokemonCreateActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeTypePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypepokemon.PokeTypePokemonEditActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeTypePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypepokemon.PokeTypePokemonShowActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.antoinecronier.pokebattle.PokeTypePokemon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.poketypepokemon.PokeTypePokemonListActivity"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.collection/com.antoinecronier.pokebattle.PokeTypePokemon" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.antoinecronier.pokebattle.provider.PokebattleProvider"
+            android:authorities="com.antoinecronier.pokebattle.provider"
+            android:label="@string/app_provider_name"
+            android:description="@string/app_provider_description"
+            android:exported="false" />
     </application>
 </manifest>

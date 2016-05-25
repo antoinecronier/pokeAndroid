@@ -98,7 +98,67 @@
                 android:layout_height="wrap_content"
                 android:autoLink="web"
                 android:text="More documentation at https://support.tactfactory.com/projects/harmony/wiki" />
-                    </LinearLayout>
+                        <Button
+                android:id="@+id/pokearene_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeArene" />
+            <Button
+                android:id="@+id/pokebadge_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeBadge" />
+            <Button
+                android:id="@+id/pokezone_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeZone" />
+            <Button
+                android:id="@+id/poketype_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeType" />
+            <Button
+                android:id="@+id/pokeposition_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokePosition" />
+            <Button
+                android:id="@+id/pokepokemon_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokePokemon" />
+            <Button
+                android:id="@+id/pokeobjet_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeObjet" />
+            <Button
+                android:id="@+id/pokeattaque_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeAttaque" />
+            <Button
+                android:id="@+id/pokedresseur_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeDresseur" />
+            <Button
+                android:id="@+id/poketypepokemon_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeTypePokemon" />
+            <Button
+                android:id="@+id/poketypeobjet_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeTypeObjet" />
+            <Button
+                android:id="@+id/pokenpc_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List all PokeNpc" />
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
 

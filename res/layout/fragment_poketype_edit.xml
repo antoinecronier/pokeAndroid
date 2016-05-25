@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/poketype_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poketype_nom_label"/>
+    <EditText
+        android:id="@+id/poketype_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/poketype_nom_label" />
+   <TextView
+        android:id="@+id/poketype_modificateur_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketype_nom"
+        android:text="@string/poketype_modificateur_label"/>
+    <EditText
+        android:id="@+id/poketype_modificateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketype_modificateur_label" />
+    <TextView
+        android:id="@+id/poketype_typefort_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketype_modificateur"
+        android:text="@string/poketype_typefort_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/poketype_typefort_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketype_typefort_label" />
+    <TextView
+        android:id="@+id/poketype_typefaible_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketype_typefort_button"
+        android:text="@string/poketype_typefaible_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/poketype_typefaible_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketype_typefaible_label" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/pokearene_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pokearene_nom_label"/>
+    <EditText
+        android:id="@+id/pokearene_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/pokearene_nom_label" />
+    <TextView
+        android:id="@+id/pokearene_maitre_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_nom"
+        android:text="@string/pokearene_maitre_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokearene_maitre_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_maitre_label" />
+    <TextView
+        android:id="@+id/pokearene_dresseurs_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_maitre_button"
+        android:text="@string/pokearene_dresseurs_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/pokearene_dresseurs_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_dresseurs_label" />
+    <TextView
+        android:id="@+id/pokearene_badge_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_dresseurs_button"
+        android:text="@string/pokearene_badge_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokearene_badge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_badge_label" />
+    <TextView
+        android:id="@+id/pokearene_zone_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_badge_button"
+        android:text="@string/pokearene_zone_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokearene_zone_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_zone_label" />
+    <TextView
+        android:id="@+id/pokearene_position_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_zone_button"
+        android:text="@string/pokearene_position_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokearene_position_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokearene_position_label" />
+</RelativeLayout>

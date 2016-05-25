@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2.5dp"
+    android:background="@drawable/list_item_activated_background" >
+        <TextView
+            android:id="@+id/row_poketypepokemon_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_attaque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_nom" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_attaque_spe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_attaque" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_defence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_attaque_spe" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_defence_spe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_defence" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_vitesse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_defence_spe" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_pv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_vitesse" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_pokedex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_pv" />
+        <TextView
+            android:id="@+id/row_poketypepokemon_evolue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_poketypepokemon_pokedex" />
+
+</RelativeLayout>

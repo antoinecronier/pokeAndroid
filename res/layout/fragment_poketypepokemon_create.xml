@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/poketypepokemon_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poketypepokemon_nom_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/poketypepokemon_nom_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_attaque_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_nom"
+        android:text="@string/poketypepokemon_attaque_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_attaque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_attaque_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_attaque_spe_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_attaque"
+        android:text="@string/poketypepokemon_attaque_spe_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_attaque_spe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_attaque_spe_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_defence_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_attaque_spe"
+        android:text="@string/poketypepokemon_defence_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_defence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_defence_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_defence_spe_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_defence"
+        android:text="@string/poketypepokemon_defence_spe_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_defence_spe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_defence_spe_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_vitesse_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_defence_spe"
+        android:text="@string/poketypepokemon_vitesse_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_vitesse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_vitesse_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_pv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_vitesse"
+        android:text="@string/poketypepokemon_pv_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_pv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_pv_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_pokedex_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_pv"
+        android:text="@string/poketypepokemon_pokedex_label"/>
+    <EditText
+        android:id="@+id/poketypepokemon_pokedex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/poketypepokemon_pokedex_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_evolue_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_pokedex"
+        android:text="@string/poketypepokemon_evolue_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/poketypepokemon_evolue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_evolue_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_types_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_evolue_button"
+        android:text="@string/poketypepokemon_types_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/poketypepokemon_types_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_types_label" />
+    <TextView
+        android:id="@+id/poketypepokemon_zones_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_types_button"
+        android:text="@string/poketypepokemon_zones_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/poketypepokemon_zones_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poketypepokemon_zones_label" />
+</RelativeLayout>

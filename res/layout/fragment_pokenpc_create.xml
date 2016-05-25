@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/pokenpc_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pokenpc_nom_label"/>
+    <EditText
+        android:id="@+id/pokenpc_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/pokenpc_nom_label" />
+    <TextView
+        android:id="@+id/pokenpc_profession_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_nom"
+        android:text="@string/pokenpc_profession_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.EnumSpinner
+        android:id="@+id/pokenpc_profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_profession_label" />
+    <TextView
+        android:id="@+id/pokenpc_description_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_profession"
+        android:text="@string/pokenpc_description_label"/>
+    <EditText
+        android:id="@+id/pokenpc_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textAutoComplete|textMultiLine"
+        android:layout_below="@+id/pokenpc_description_label" />
+    <TextView
+        android:id="@+id/pokenpc_objets_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_description"
+        android:text="@string/pokenpc_objets_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/pokenpc_objets_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_objets_label" />
+    <TextView
+        android:id="@+id/pokenpc_badge_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_objets_button"
+        android:text="@string/pokenpc_badge_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/pokenpc_badge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_badge_label" />
+    <TextView
+        android:id="@+id/pokenpc_pokemons_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_badge_button"
+        android:text="@string/pokenpc_pokemons_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/pokenpc_pokemons_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_pokemons_label" />
+    <TextView
+        android:id="@+id/pokenpc_team_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_pokemons_button"
+        android:text="@string/pokenpc_team_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.MultiEntityWidget
+        android:id="@+id/pokenpc_team_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_team_label" />
+    <TextView
+        android:id="@+id/pokenpc_position_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_team_button"
+        android:text="@string/pokenpc_position_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokenpc_position_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_position_label" />
+    <TextView
+        android:id="@+id/pokenpc_zone_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_position_button"
+        android:text="@string/pokenpc_zone_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokenpc_zone_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokenpc_zone_label" />
+</RelativeLayout>

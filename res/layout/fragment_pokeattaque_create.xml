@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/pokeattaque_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pokeattaque_nom_label"/>
+    <EditText
+        android:id="@+id/pokeattaque_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/pokeattaque_nom_label" />
+    <TextView
+        android:id="@+id/pokeattaque_puissance_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokeattaque_nom"
+        android:text="@string/pokeattaque_puissance_label"/>
+    <EditText
+        android:id="@+id/pokeattaque_puissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/pokeattaque_puissance_label" />
+    <TextView
+        android:id="@+id/pokeattaque_precision_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokeattaque_puissance"
+        android:text="@string/pokeattaque_precision_label"/>
+    <EditText
+        android:id="@+id/pokeattaque_precision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/pokeattaque_precision_label" />
+    <TextView
+        android:id="@+id/pokeattaque_type_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokeattaque_precision"
+        android:text="@string/pokeattaque_type_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokeattaque_type_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokeattaque_type_label" />
+</RelativeLayout>

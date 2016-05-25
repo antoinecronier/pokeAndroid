@@ -17,6 +17,10 @@ import android.util.SparseArray;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.antoinecronier.pokebattle.menu.SaveMenuWrapper;
+import com.antoinecronier.pokebattle.menu.CrudDeleteMenuWrapper;
+import com.antoinecronier.pokebattle.menu.CrudEditMenuWrapper;
+import com.antoinecronier.pokebattle.menu.CrudCreateMenuWrapper;
 
 /**
  * PokebattleMenuBase.
@@ -25,6 +29,14 @@ import android.view.MenuItem;
  * please see PokebattleMenu.
  */
 public abstract class PokebattleMenuBase {
+    /** Save value. */
+    public static final int SAVE = 0x1;
+    /** Cruddelete value. */
+    public static final int CRUDDELETE = 0x2;
+    /** Crudedit value. */
+    public static final int CRUDEDIT = 0x3;
+    /** Crudcreate value. */
+    public static final int CRUDCREATE = 0x4;
 
     /** Array of MenuWrapperBase. */
     protected SparseArray<MenuWrapperBase> menus =
@@ -61,6 +73,10 @@ public abstract class PokebattleMenuBase {
 
         this.fragment    = fragment;
         this.ctx     = ctx;
+        this.menus.put(SAVE, new SaveMenuWrapper());
+        this.menus.put(CRUDDELETE, new CrudDeleteMenuWrapper());
+        this.menus.put(CRUDEDIT, new CrudEditMenuWrapper());
+        this.menus.put(CRUDCREATE, new CrudCreateMenuWrapper());
 
     }
 

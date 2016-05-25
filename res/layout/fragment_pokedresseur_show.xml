@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/pokedresseur_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/pokedresseur_pseudo_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pokedresseur_pseudo_label"/>
+            <TextView
+                android:id="@+id/pokedresseur_pseudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokedresseur_pseudo_label" />
+            <TextView
+                android:id="@+id/pokedresseur_login_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokedresseur_pseudo"
+                android:text="@string/pokedresseur_login_label"/>
+            <TextView
+                android:id="@+id/pokedresseur_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokedresseur_login_label" />
+            <TextView
+                android:id="@+id/pokedresseur_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokedresseur_login"
+                android:text="@string/pokedresseur_password_label"/>
+            <TextView
+                android:id="@+id/pokedresseur_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:inputType="textPassword"
+                android:layout_below="@+id/pokedresseur_password_label" />
+            <TextView
+                android:id="@+id/pokedresseur_npcs_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pokedresseur_password"
+                android:text="@string/pokedresseur_npcs_label"/>
+            <TextView
+                android:id="@+id/pokedresseur_npcs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/pokedresseur_npcs_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/pokedresseur_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/pokedresseur_not_found" />
+</RelativeLayout>

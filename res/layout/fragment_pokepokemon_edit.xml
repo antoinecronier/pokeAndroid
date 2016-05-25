@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/pokepokemon_surnom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pokepokemon_surnom_label"/>
+    <EditText
+        android:id="@+id/pokepokemon_surnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/pokepokemon_surnom_label" />
+   <TextView
+        android:id="@+id/pokepokemon_niveau_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_surnom"
+        android:text="@string/pokepokemon_niveau_label"/>
+    <EditText
+        android:id="@+id/pokepokemon_niveau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/pokepokemon_niveau_label" />
+   <TextView
+        android:id="@+id/pokepokemon_capture_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_niveau"
+        android:text="@string/pokepokemon_capture_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.DateTimeWidget
+        android:id="@+id/pokepokemon_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_capture_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/pokepokemon_capture_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/pokepokemon_capture_time_title" />
+    <TextView
+        android:id="@+id/pokepokemon_type_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_capture"
+        android:text="@string/pokepokemon_type_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokepokemon_type_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_type_label" />
+    <TextView
+        android:id="@+id/pokepokemon_attaque1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_type_button"
+        android:text="@string/pokepokemon_attaque1_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokepokemon_attaque1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque1_label" />
+    <TextView
+        android:id="@+id/pokepokemon_attaque2_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque1_button"
+        android:text="@string/pokepokemon_attaque2_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokepokemon_attaque2_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque2_label" />
+    <TextView
+        android:id="@+id/pokepokemon_attaque3_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque2_button"
+        android:text="@string/pokepokemon_attaque3_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokepokemon_attaque3_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque3_label" />
+    <TextView
+        android:id="@+id/pokepokemon_attaque4_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque3_button"
+        android:text="@string/pokepokemon_attaque4_label"/>
+    <com.antoinecronier.pokebattle.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokepokemon_attaque4_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokepokemon_attaque4_label" />
+</RelativeLayout>
