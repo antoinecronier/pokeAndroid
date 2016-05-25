@@ -1,5 +1,11 @@
 package com.antoinecronier.pokebattle.entity;
 
-public class PokeType {
+import java.util.ArrayList;
 
+public class PokeType {
+	private int id;
+	private String nom;
+	private int modificateur;
+	private ArrayList<PokeType> typeFort;
+	private ArrayList<PokeType> typeFaible;
 }
