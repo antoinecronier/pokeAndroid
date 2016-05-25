@@ -17,5 +17,5 @@ public class PokeTypeObjet {
 	private int id;
 	
 	@Column(type = Type.STRING)
-	private int nom;
+	private String nom;
 }
