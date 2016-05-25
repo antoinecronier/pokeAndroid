@@ -26,8 +26,10 @@ public class PokeType {
 	private int modificateur;
 	
 	@OneToMany
+	@Column(nullable = true)
 	private ArrayList<PokeType> typeFort;
 	
 	@OneToMany
+	@Column(nullable = true)
 	private ArrayList<PokeType> typeFaible;
 }

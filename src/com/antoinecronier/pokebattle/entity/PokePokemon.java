@@ -25,21 +25,26 @@ public class PokePokemon {
 	@Column(type = Type.INTEGER)
 	private int niveau;
 	
-	@Column(type = Type.DATETIME)
+	@Column(type = Type.DATETIME, nullable = true)
 	private DateTime capture;
 	
 	@ManyToOne
+	@Column(nullable = true)
 	private PokeTypePokemon type;
 	
 	@ManyToOne
+	@Column(nullable = true)
 	private PokeAttaque attaque1;
 	
 	@ManyToOne
+	@Column(nullable = true)
 	private PokeAttaque attaque2;
 	
 	@ManyToOne
+	@Column(nullable = true)
 	private PokeAttaque attaque3;
 	
 	@ManyToOne
+	@Column(nullable = true)
 	private PokeAttaque attaque4;
 }
